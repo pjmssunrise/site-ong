@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Testando dados do Google Forms</title>
+</head>
+<body>
+  <h1>Dados da planilha:</h1>
+  <ul id="dados-lista"></ul>
+
+  <script>
+    async function carregarDados() {
+      const response = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vTgR8nUxQGU9zJOcC8X0AGGrPq8AhbXHPaYW7A9eoFvEmcTWlrbm64w16Z1qFFGR6MGb1RnenlPCl07/pub?output=csv");
+      const texto = await response.text();
+
+      const linhas = texto.split('\n');
+      const cabecalho = linhas[0].split(',');
+
+      const ul = document.getElementById('dados-lista');
+
+      for (let i = 1; i < linhas.length; i++) {
+        if (!linhas[i].trim()) continue; // pula linha vazia
+        const colunas = linhas[i].split(',');
+
+        const li = document.createElement('li');
+        li.textContent = colunas.map((v, index) => `${cabecalho[index]}: ${v}`).join(' | ');
+        ul.appendChild(li);
+      }
+    }
+
+    carregarDados();
+  </script>
+</body>
+</html>
