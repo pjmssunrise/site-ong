@@ -6,20 +6,35 @@
   box-sizing: border-box;
 }
 
-.imagem_doguinho {
-    width: 200px;
-}
-
 .section1 {
-    height: 400px;
+    height: 500px;
+    width: 100%;
+    background-image: url('../imagens/DOGUINHO.png');
+    background-size: cover;
+    background-position: center 20%;
     display: flex;
-    padding: 10%;
     align-items: center;
+    justify-content: flex-start; /* alinhamento à esquerda */
+    position: relative;
+    color: white;
+    padding-left: 8%; /* afastar do canto esquerdo */
+    
 }
 
-h1 {
-    font-size: 50px;
+
+
+.titulo1 {
+    padding: 5%;
+    text-align: left; /* texto alinhado à esquerda */
+    color: white;
 }
+
+.titulo1 h1 {
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
 
 
 /* SECTION 2 ____________________________________________________ */
@@ -76,4 +91,150 @@ h1 {
     font-size: 0.9rem;
     margin-top: 10px;
     overflow-wrap: break-word;
+}
+
+
+/* SECTION 3 */
+
+.section3 {
+    height: auto;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15%;
+    /* background-image: url('../imagens/fundo1.png');
+    background-size: 100%;
+    background-position: center 20%; */
+    /* align-items: center; */
+    /* position: relative; */
+}
+
+.section3_img {
+    width: 50%;
+    margin-left: 15%;
+}
+
+.section3_img img {
+    width: 400px;
+    border-radius: 70%;
+    border: black 1px solid;
+}
+
+/* SECTION 4 */
+
+.imagens_de_adocao img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.imagens_de_adocao {
+    display: flex;
+    gap: 100px;
+}
+
+.section4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* <<< IMPORTANTE */
+    align-items: center;     /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente se tiver altura definida */
+    text-align: center;      /* opcional: centraliza o texto também */
+    margin-bottom: 30px;     /* espaço abaixo, opcional */
+    padding: 5%;
+    
+}
+
+.texto1 {
+    margin-top: 100px;
+}
+
+
+
+/* DICAS */
+
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+  color: #333;
+}
+
+header {
+  background-color: #cde6c2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.categoria {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #e7f3dc;
+  border-radius: 10px;
+}
+
+.categoria h2 {
+  color: #2d7d46;
+  margin-bottom: 15px;
+}
+
+.categoria ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.categoria li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  padding-left: 25px;
+  position: relative;
+}
+
+.categoria li::before {
+  content: "🐾";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.mensagem-final {
+  background-color: #fad037;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #3a2d00;
+  margin-top: 60px;
+}
+
+.site-footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.categoria_img {
+    width: 100px;
+    height: 500px;
 }
