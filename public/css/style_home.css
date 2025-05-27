@@ -1,0 +1,79 @@
+* {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.imagem_doguinho {
+    width: 200px;
+}
+
+.section1 {
+    height: 400px;
+    display: flex;
+    padding: 10%;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+/* SECTION 2 ____________________________________________________ */
+.section2 {
+    height: auto;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: column;
+}
+
+.titulo2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* <<< IMPORTANTE */
+    align-items: center;     /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente se tiver altura definida */
+    text-align: center;      /* opcional: centraliza o texto também */
+    margin-bottom: 30px;     /* espaço abaixo, opcional */
+}
+
+
+.div_sobre_nos {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* espaço entre os itens */
+    flex-wrap: wrap; /* quebra para a linha de baixo em telas menores */
+    padding: 5%;
+}
+
+.div_separada {
+    text-align: center;
+    width: 25%;
+    background-color: #fad037;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.div_separada img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.div_separada h1 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.div_separada p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    overflow-wrap: break-word;
+}

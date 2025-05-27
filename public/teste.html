@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <title>Testando dados do Google Forms</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="shortcut icon" href="imagens/logo_redonda.png" type="image/x-icon">
+  <title>Instituto Adota Pet SJC - Ong</title>
 </head>
 <body>
-  <h1>Dados da planilha:</h1>
+  <header class="navbar">
+    <div class="logo">
+      <img src="imagens/logo_redonda.png" alt="Logo da ONG" />
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="dicas.html">Dicas</a>
+      <a href="contato.html">Como adotar</a>
+      <a href="teste.html">Animais para adoção</a>
+    </nav>
+
+    <div class="cta">
+      <a href="como-adotar.html" class="btn-adotar">Como Adotar</a>
+    </div>
+  </header>
+ 
+
   <ul id="dados-lista"></ul>
 
   <script>
@@ -30,5 +51,17 @@
 
     carregarDados();
   </script>
+
+
+
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Instituto Adota Pet SJC. Todos os direitos reservados.</p>
+      <p>Desenvolvido por Maitê Emanuely para o Projeto de Extensão Universitária</p>
+    </div>
+  </footer>
+
+
 </body>
 </html>
